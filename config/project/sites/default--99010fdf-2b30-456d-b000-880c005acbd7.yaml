@@ -1,0 +1,8 @@
+baseUrl: $PRIMARY_SITE_URL
+handle: default
+hasUrls: true
+language: en-US
+name: 'Tim Hamilton'
+primary: true
+siteGroup: e3278a27-f5d2-4e3d-ab9a-40a4380833ab # Tim Hamilton
+sortOrder: 1

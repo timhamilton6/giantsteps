@@ -1,12 +1,21 @@
-dateModified: 1742422596
+dateModified: 1743019936
 email:
   fromEmail: tim.hamilton6@gmail.com
   fromName: 'Tim Hamilton'
   transportType: craft\mail\transportadapters\Sendmail
+fs:
+  hardDisk:
+    hasUrls: true
+    name: 'Hard Disk'
+    settings:
+      path: '@webroot/uploads'
+    type: craft\fs\Local
+    url: '@uploads'
 meta:
   __names__:
     99010fdf-2b30-456d-b000-880c005acbd7: 'Tim Hamilton' # Tim Hamilton
     e3278a27-f5d2-4e3d-ab9a-40a4380833ab: 'Tim Hamilton' # Tim Hamilton
+    f275e8f7-eed1-498c-9a4b-0624beace4ef: Images # Images
 plugins:
   copy:
     edition: standard

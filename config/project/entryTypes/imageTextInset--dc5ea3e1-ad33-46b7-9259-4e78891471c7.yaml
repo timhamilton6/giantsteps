@@ -1,0 +1,85 @@
+color: emerald
+fieldLayouts:
+  771e18a5-ffcf-4b81-b2f3-657231b91179:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-03-27T18:04:06+00:00'
+            elementCondition: null
+            fieldUid: cd76630d-2a1f-4191-a23c-b6fb4a98b299 # Left Image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f517ffa5-c600-40d8-bcbe-59cee3e5fc80
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-03-27T18:04:06+00:00'
+            elementCondition: null
+            fieldUid: a7f67c11-0827-4e5a-bd4c-745ee9e94f9a # Left Title
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 83085916-a3c5-4ea7-983b-121cc1bc6550
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-03-27T18:04:06+00:00'
+            elementCondition: null
+            fieldUid: 161cbc52-78f7-4999-8510-d0425d20c0eb # Left Content
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 485d00e4-78d2-47c3-8ffa-760f0b871c90
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-03-27T18:04:06+00:00'
+            elementCondition: null
+            fieldUid: d8c6811b-3b41-4c1e-91ce-c158325c180b # Right Image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5c931d9d-0287-4fc1-9d74-34e13c02231a
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: d2a6ca3c-d534-46c6-baf2-281cb5d96f31
+        userCondition: null
+handle: imageTextInset
+hasTitleField: false
+icon: pager
+name: 'Image Text Inset'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

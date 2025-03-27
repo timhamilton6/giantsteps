@@ -1,0 +1,37 @@
+color: teal
+fieldLayouts:
+  651081fd-5093-4573-b75e-711494bfb49a:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-03-27T18:04:53+00:00'
+            elementCondition: null
+            fieldUid: 4bcccef8-4736-4cbc-9731-10c3fef331c8 # Text Big Full
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b281d075-bb9d-416b-99ee-156229a26324
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: d467a77e-ae94-46f2-be29-f79eba929b72
+        userCondition: null
+handle: textBigFull
+hasTitleField: false
+icon: align-center
+name: 'Text Big Full'
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

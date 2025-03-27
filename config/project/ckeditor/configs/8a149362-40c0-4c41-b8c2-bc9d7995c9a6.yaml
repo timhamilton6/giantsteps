@@ -1,0 +1,13 @@
+headingLevels:
+  - 1
+  - 2
+  - 3
+  - 4
+name: Simple
+toolbar:
+  - heading
+  - '|'
+  - bold
+  - italic
+  - link
+  - sourceEditing

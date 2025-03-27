@@ -1,4 +1,4 @@
-dateModified: 1743019936
+dateModified: 1743098776
 email:
   fromEmail: tim.hamilton6@gmail.com
   fromName: 'Tim Hamilton'
@@ -13,10 +13,35 @@ fs:
     url: '@uploads'
 meta:
   __names__:
+    3d587b2b-01d4-4c93-b40e-a7a4beb9cbea: Summary # Summary
+    4bcccef8-4736-4cbc-9731-10c3fef331c8: 'Text Big Full' # Text Big Full
+    4f69cce2-24ac-4cbb-be32-f2d40132b9df: 'Text Big Full' # Text Big Full
+    6c7f1fac-89c7-48ed-8290-a7b0801b2d43: 'Case Studies' # Case Studies
+    7f049253-d563-458f-8ffe-3656e1bf585d: Image # Image
+    8a149362-40c0-4c41-b8c2-bc9d7995c9a6: Simple # Simple
+    15f30be8-b058-4b70-b6d6-2859013b8098: 'Right Content' # Right Content
+    70f328d1-23c5-413a-867a-b37e7bd79f7f: OneHalvedText # OneHalvedText
+    161cbc52-78f7-4999-8510-d0425d20c0eb: 'Left Content' # Left Content
+    708ff6a5-1f94-412d-ba33-2a3a5a1b13a0: 'Featured Image' # Featured Image
+    5179e2b3-47aa-4112-97d3-3a9f9f47a9b6: 'Post Content' # Post Content
+    52327cf3-0f96-4d71-87ff-240ea857f1bd: 'Image Grid' # Image Grid
+    74319a6d-ad9d-4794-a29d-efcd9c93164f: Subtitle # Subtitle
     99010fdf-2b30-456d-b000-880c005acbd7: 'Tim Hamilton' # Tim Hamilton
+    a0c6ad97-89e0-4fd0-9a89-5b8961f52ba1: 'Right Title' # Right Title
+    a7f67c11-0827-4e5a-bd4c-745ee9e94f9a: 'Left Title' # Left Title
+    cd76630d-2a1f-4191-a23c-b6fb4a98b299: 'Left Image' # Left Image
+    d8c6811b-3b41-4c1e-91ce-c158325c180b: 'Right Image' # Right Image
+    dc5ea3e1-ad33-46b7-9259-4e78891471c7: 'Image Text Inset' # Image Text Inset
+    dd4f8414-a0b9-4e71-b2a1-aef32b62435c: 'Two Halved Text' # Two Halved Text
+    e2df6855-2755-4d36-bc68-5aba6d97b19b: Study # Study
+    e30ceae2-bffd-46fc-a3c9-51474c158a36: 'Full Width Image' # Full Width Image
     e3278a27-f5d2-4e3d-ab9a-40a4380833ab: 'Tim Hamilton' # Tim Hamilton
     f275e8f7-eed1-498c-9a4b-0624beace4ef: Images # Images
 plugins:
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0.0
   copy:
     edition: standard
     enabled: true

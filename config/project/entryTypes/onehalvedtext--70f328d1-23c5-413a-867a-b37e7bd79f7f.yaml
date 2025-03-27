@@ -1,0 +1,53 @@
+color: sky
+fieldLayouts:
+  04de36b9-ebcf-42a0-aaf7-73b2279ddd7f:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-03-27T18:06:11+00:00'
+            elementCondition: null
+            fieldUid: a7f67c11-0827-4e5a-bd4c-745ee9e94f9a # Left Title
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f6448044-605d-4ad2-9f54-a67c0ecb594d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-03-27T18:06:11+00:00'
+            elementCondition: null
+            fieldUid: 161cbc52-78f7-4999-8510-d0425d20c0eb # Left Content
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0cc3836a-e26b-4476-8478-ca448865a967
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 007f4962-edb2-430b-949c-df006d0a294f
+        userCondition: null
+handle: onehalvedtext
+hasTitleField: false
+icon: align-left
+name: OneHalvedText
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,0 +1,28 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: e2df6855-2755-4d36-bc68-5aba6d97b19b # Study
+handle: caseStudies
+maxAuthors: 1
+name: 'Case Studies'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  99010fdf-2b30-456d-b000-880c005acbd7: # Tim Hamilton
+    enabledByDefault: true
+    hasUrls: true
+    template: case-studies/_entry.twig
+    uriFormat: 'case-studies/{slug}'
+type: channel

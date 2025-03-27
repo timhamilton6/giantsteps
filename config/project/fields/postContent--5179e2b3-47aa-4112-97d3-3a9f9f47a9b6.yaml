@@ -1,0 +1,50 @@
+columnSuffix: null
+handle: postContent
+instructions: null
+name: 'Post Content'
+searchable: true
+settings:
+  createButtonLabel: 'Add Block'
+  defaultIndexViewMode: cards
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - e30ceae2-bffd-46fc-a3c9-51474c158a36 # Full Width Image
+    -
+      __assoc__:
+        -
+          - uid
+          - dd4f8414-a0b9-4e71-b2a1-aef32b62435c # Two Halved Text
+    -
+      __assoc__:
+        -
+          - uid
+          - dc5ea3e1-ad33-46b7-9259-4e78891471c7 # Image Text Inset
+    -
+      __assoc__:
+        -
+          - uid
+          - 4f69cce2-24ac-4cbb-be32-f2d40132b9df # Text Big Full
+    -
+      __assoc__:
+        -
+          - uid
+          - 52327cf3-0f96-4d71-87ff-240ea857f1bd # Image Grid
+    -
+      __assoc__:
+        -
+          - uid
+          - 70f328d1-23c5-413a-867a-b37e7bd79f7f # OneHalvedText
+  includeTableView: false
+  maxEntries: null
+  minEntries: 1
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

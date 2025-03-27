@@ -1,0 +1,37 @@
+color: lime
+fieldLayouts:
+  b8712038-5d16-4e96-8e41-9713b87cabf2:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-03-27T18:00:31+00:00'
+            elementCondition: null
+            fieldUid: 7f049253-d563-458f-8ffe-3656e1bf585d # Image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: daacb34b-4012-4974-ba25-b13518ee2f4c
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 5fa0b096-9f32-4954-a683-c7335c65fcda
+        userCondition: null
+handle: fullWidthImage
+hasTitleField: false
+icon: image-landscape
+name: 'Full Width Image'
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

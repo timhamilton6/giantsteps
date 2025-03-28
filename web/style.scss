@@ -114,7 +114,9 @@ footer {
 
 
 .txt-big-full {display: grid; font-size: 1.5rem;
-    .inner-wrap {text-align: center; grid-column: span 6 / span 6; grid-column-start: 2;}
+    .inner-wrap {text-align: center; grid-column: span 6 / span 6; grid-column-start: 2;
+        p {font-size: 1.75rem; line-height: 2.25rem;}
+    }
 }
 
 .txt-img-grid {

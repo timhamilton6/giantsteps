@@ -11,11 +11,7 @@
     
   </div>
   
-      {% if featuredImage %}
-    <div class="featured-image">
-      {{ featuredImage.getImg() }}
-    </div>
-  {% endif %}
+
   
 </header>
 
@@ -31,31 +27,31 @@
     {# Switch what is displayed based on the `type`: #}
     {% if blockType == 'fullWidthImage' %}
   {% set image = contentBlock.image.one() %}
-<section class="entry-piece img-full">
-  <div class="inner-wrap">{{ image.getImg() }}</div>
+<section class="entry-piece img-full revealing-image">
+  <div class="inner-wrap"><img src="{{ image.url }}"></div>
 </section>
   
   
     {% elseif blockType == 'twoHalvedText' %}
 
-<section class="entry-piece txt-2-half">
+<section class="entry-piece txt-2-half revealing-image">
   <div class="left">
     <h3>{{ contentBlock.leftTitle | md(inlineOnly = true) }}</h3>
-    <p>{{ contentBlock.leftContent | md }}</p>
+    <p>{{ contentBlock.leftContent | md(inlineOnly = true) }}</p>
   </div>
   <div class="right">
       <h3>{{ contentBlock.rightTitle | md(inlineOnly = true) }}</h3>
-    {{ contentBlock.rightContent | md }}
+    <p>{{ contentBlock.rightContent | md(inlineOnly = true) }}</p>
   </div>
 </section>
   
       {% elseif blockType == 'imageTextInset' %}
 
-<section class="entry-piece img-txt-inset">
+<section class="entry-piece img-txt-inset revealing-image">
   <div class="left">
     {% set leftImage = contentBlock.leftImage.one() %}
     {% set rightImage = contentBlock.rightImage.one() %}
-    {{ leftImage.getImg() }}
+    <img src="{{ leftImage.url }}">
     <div class="txt">
           <h3>{{ contentBlock.leftTitle | md(inlineOnly = true) }}</h3>
     <p>{{ contentBlock.leftContent | md }}</p>
@@ -63,7 +59,7 @@
   </div>
   
   <div class="right">
-    {{ rightImage.getImg() }}
+    <img src="{{ rightImage.url }}">
   </div>
   
   
@@ -71,31 +67,31 @@
   
       {% elseif blockType == 'textBigFull' %}
 
-<section class="entry-piece txt-big-full"><div class="inner-wrap"><p>{{ contentBlock.textBigFull | md(inlineOnly = true) }}</p></div></section>
+<section class="entry-piece txt-big-full revealing-image"><div class="inner-wrap"><p>{{ contentBlock.textBigFull | md(inlineOnly = true) }}</p></div></section>
   
       {% elseif blockType == 'imageGrid' %}
 
 
-<section class="entry-piece txt-img-grid">
+<section class="entry-piece txt-img-grid revealing-image">
   
       {% set leftImage = contentBlock.leftImage.one() %}
     {% set rightImage = contentBlock.rightImage.one() %}
     {% set rightImage2 = contentBlock.rightImage2.one() %}
 
   <div class="left">
-  {{ leftImage.getImg() }}
+  <img src="{{ leftImage.url }}">
   </div>
   
   <div class="right">
-  {{ rightImage.getImg() }}
-    {{ rightImage2.getImg() }}
+  <img src="{{ rightImage.url }}">
+    <img src="{{ rightImage2.url }}">
   </div>
   
 </section>
   
       {% elseif blockType == 'onehalvedtext' %}
 
-<section class="entry-piece txt-1-half">
+<section class="entry-piece txt-1-half revealing-image">
 <div class="left">
     <div class="txt">
           <h3>{{ contentBlock.leftTitle | md(inlineOnly = true) }}</h3>

@@ -10,15 +10,8 @@
   <body>
       <div class="media">Reading: 3 Shades of Blue by James Kaplan <span class="emph">&bull;</span> Listening: End by Explosions in the Sky <span class="emph">&bull;</span> Watching: old Kurosawa movies</div>
       <div class="container">
-        <nav>
-            <div class="logo"><img src="/assets/nav-logo.png"></div>
-                <ul>
-                    <li><a href="">Resume</a>
-                    <li><a href="">LinkedIn</a>
-                    <li><a href="">Github</a>
-                    <li><a href="">Email</a>
-                </ul>
-        </nav>
+
+          {% include "_nav.twig" %}
         
         {% block content %}
         {# Nothing here, yet! #}
@@ -27,7 +20,7 @@
           <footer>
           <img src="/assets/footer-logo.png">
               <p><span class="emph">Thanks for stopping by!</span><br>
-                  Let's design and build our own websites again. I built this one using <a href="https://craftcms.com/">Craft CMS.</a></p>
+                  I built this using <a href="https://craftcms.com/">Craft CMS!</a></p>
           </footer>
           
       </div>

@@ -48,6 +48,34 @@ a, a:visited {color: $primary;}
 
 img {max-width: 100%; height: auto;}
 
+
+@keyframes reveal {
+	from {
+		opacity: 0;
+        transform: translateY(100px);
+		/*clip-path: inset(45% 20% 45% 20%);*/
+	}
+	to {
+		opacity: 1;
+        transform: translateY(0);
+		/*clip-path: inset(0% 0% 0% 0%);*/
+	}
+}
+
+.revealing-image {
+	/* Create View Timeline */
+	view-timeline-name: --revealing-image;
+	view-timeline-axis: block;
+
+	/* Attach animation, linked to the  View Timeline */
+	animation: linear reveal both;
+	animation-timeline: --revealing-image;
+
+	/* Tweak range when effect should run*/
+	animation-range: entry 15% cover 35%;
+}
+
+
 .emph {color: $primary;}
 
 .container {max-width: 1075px; margin: 0 auto; padding: 1.5rem;}
@@ -86,8 +114,10 @@ display: grid;
     gap: 24px; align-items: center; margin: 1rem 0;
 }
 
-.study-img { grid-column: span 4 / span 4; padding: 8rem 0; background: $dark; grid-column-start: 5; border-radius: .5rem;}
-.study-txt { grid-column: span 3 / span 3; }
+.study-img { grid-column: span 4 / span 4;  grid-column-start: 5; border-radius: .5rem;}
+.study-txt { grid-column: span 3 / span 3; 
+    h3 {margin-top: 0.5rem;}
+}
 
 footer {
     margin-top: 4rem;
@@ -137,4 +167,65 @@ footer {
     .left {
         grid-column: span 4 / span 4;
     }
+}
+
+
+@media screen and (max-width: 1040px) {
+    .text {
+        grid-column: span 4 / span 4;
+        grid-column-start: 5;
+    }
+    h1 {font-size: 7vw;}
+    .sub {font-size: 3.5vw;}
+}
+
+@media screen and (max-width: 770px) {
+    .study-txt {
+        grid-column: span 4 / span 4;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    
+    body {border-top: 8px solid $primary;}
+    .media {display: none;}
+    nav {margin-top: 0;}
+    header {padding: 2rem 0 2rem;}
+    .headline {
+        grid-column: span 8 / span 8;
+    }
+    h1 {font-size: 15vw;}
+    .sub {font-size: 7vw; line-height: 2.3rem; margin-top:0.25rem;}
+    
+        header.case-studies h1 {font-size: 8vw; line-height: 2.5rem;}
+    header.case-studies .sub {font-size: 4vw;}
+    
+    .text {
+        grid-column: span 8 / span 8;
+        grid-column-start: 1;
+    }
+    h2 {font-size: 7vw;}
+    
+    p {font-size: 1.25rem; line-height: 1.7rem;}
+    a.button {font-size: 1.7rem;}
+    
+    .study-txt {grid-column: span 8 / span 8; order: 2; }
+    .study-img {grid-column: span 8 / span 8;}
+    
+    .left, .right {grid-column: span 8 / span 8;}
+    
+    .left img, .right img {width: 100%;}
+    .txt-big-full .inner-wrap {grid-column: span 8 / span 8; grid-column-start: 1;}
+     .txt-1-half .left {grid-column: span 8 / span 8;}
+}
+
+@media screen and (max-width: 450px) {
+    nav {flex-direction: column;
+        ul {padding: 0;
+            li {margin: 0 0.5rem;}
+        }
+    }
+    h1 {font-size: 12vw;}
+    
+    .txt-big-full .inner-wrap p {font-size: 1.25rem; line-height: 2rem;}
 }

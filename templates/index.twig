@@ -22,53 +22,24 @@
 
  <section class="case-studies">
 
+     {% set posts = craft.entries().section('caseStudies').all() %}
      
-     <div class="single-study">
-      <div class="study-txt">
-        <h3>ACDS Observatory.</h3>
-        <p>Advanced, in-depth, enterprise-level attack surface management tool.  I've led design and design strategy from its initial proof of concept  through to working directly with a massive American customer in the  financial sphere.</p>
-        <a class="button" href="">See More</a>
+     {% for post in posts %}
+    {% set image = post.featuredImage.one() %}
+
+    <div class="single-study">
+              <div class="study-txt">
+        <h3>{{ post.title }}</h3>
+{{ post.summary | md }}
+        <a class="button" href="{{ post.url }}">See More</a>
       </div>
-        <div class="study-img"></div>
+         {% if image %}
+        <div class="study-img">{{ image.getImg() }}</div>
+        {% endif %}
+
     </div>
+  {% endfor %}
      
-     <div class="single-study">
-      <div class="study-txt">
-        <h3>Truckstop Go.</h3>
-        <p>A mobile logistics app for iOS and Android. Lead end-to-end product designer, handling research, implementation, and stakeholder management. Instrumental in Truckstop's internal design culture, where I helped their processes for shipping product and gathering feedback quickly.</p>
-        <a class="button" href="">See More</a>
-      </div>
-        <div class="study-img"></div>
-    </div>
-     
-     <div class="single-study">
-      <div class="study-txt">
-        <h3>RedShelf Inclusive Access.</h3>
-        <p>Actionable data and communication tools about student participation in a higher-ed institution's course material distribution program. Led UX and interface design; worked in collaboration with our product manager, engineering team, and accessibility director; evangelized for design strategy.</p>
-        <a class="button" href="">See More</a>
-      </div>
-        <div class="study-img"></div>
-    </div>
-     
-     <div class="single-study">
-      <div class="study-txt">
-        <h3>Dispatch by Rebellion Defense.</h3>
-        <p>Leans on AI for joint military operational planning; recommends courses of action by calculating mission objectives, available assets, environmental factors. I led UX through early stages including needs assessment and object-oriented design classifications.</p>
-        <a class="button" href="">See More</a>
-      </div>
-        <div class="study-img"></div>
-    </div>
-     
-          <div class="single-study">
-      <div class="study-txt">
-        <h3>Etcetera.</h3>
-        <p>I've been fortunate enough to have worked on everything from websites to animations to sports equipment graphics throughout the years. I'm sharing some of my favorites here.</p>
-        <a class="button" href="">See More</a>
-      </div>
-        <div class="study-img"></div>
-    </div>
-   
-    
-  </section>
- 
+     </section>
 {% endblock %}
+    

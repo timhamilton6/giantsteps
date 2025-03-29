@@ -18,7 +18,7 @@
 
 <img class="tjh" src="assets/tjh.png">
 
-<h2>Case studies.</h2>
+<h2 class="revealing-image">Case studies.</h2>
 
  <section class="case-studies">
 
@@ -27,7 +27,7 @@
      {% for post in posts %}
     {% set image = post.featuredImage.one() %}
 
-    <div class="single-study">
+    <div class="single-study revealing-image">
               <div class="study-txt">
         <h3>{{ post.title }}</h3>
 {{ post.summary | md }}

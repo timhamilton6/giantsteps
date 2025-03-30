@@ -279,14 +279,25 @@ footer {
     grid-column: span 4/span 4;
     grid-column-start: 5;
   }
-  h1 {
-    font-size: 7vw;
+  .home h1 {
+    font-size: 4rem;
   }
-  .sub {
-    font-size: 3.5vw;
+}
+@media screen and (max-width: 850px) {
+  .home h1 {
+    font-size: 3.5rem;
+  }
+  .home .sub {
+    font-size: 1.7rem;
   }
 }
 @media screen and (max-width: 770px) {
+  .home h1 {
+    font-size: 3rem;
+  }
+  .home .sub {
+    font-size: 1.4rem;
+  }
   .study-txt {
     grid-column: span 4/span 4;
   }
@@ -308,19 +319,7 @@ footer {
     grid-column: span 8/span 8;
   }
   h1 {
-    font-size: 15vw;
-  }
-  .sub {
-    font-size: 7vw;
-    line-height: 2.3rem;
-    margin-top: 0.25rem;
-  }
-  header.case-studies h1 {
-    font-size: 8vw;
-    line-height: 2.5rem;
-  }
-  header.case-studies .sub {
-    font-size: 4vw;
+    font-size: 3.5rem;
   }
   .text {
     grid-column: span 8/span 8;
@@ -357,7 +356,7 @@ footer {
     grid-column: span 8/span 8;
   }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
   nav {
     flex-direction: column;
   }
@@ -367,12 +366,28 @@ footer {
   nav ul li {
     margin: 0 0.5rem;
   }
+  header {
+    padding-bottom: 0;
+  }
+  .tjh {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
   h1 {
-    font-size: 12vw;
+    font-size: 2.5rem;
+    line-height: 102%;
   }
   .txt-big-full .inner-wrap p {
     font-size: 1.25rem;
     line-height: 2rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .sub {
+    font-size: 1.5rem;
+  }
+  h1 {
+    font-size: 2rem;
   }
 }
 

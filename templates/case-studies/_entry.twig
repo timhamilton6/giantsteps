@@ -28,7 +28,7 @@
     {% if blockType == 'fullWidthImage' %}
   {% set image = contentBlock.image.one() %}
 <section class="entry-piece img-full revealing-image">
-  <div class="inner-wrap"><img src="{{ image.url }}"></div>
+  <div class="inner-wrap img-wrap"><img src="{{ image.url }}"></div>
 </section>
   
   
@@ -51,7 +51,7 @@
   <div class="left">
     {% set leftImage = contentBlock.leftImage.one() %}
     {% set rightImage = contentBlock.rightImage.one() %}
-    <img src="{{ leftImage.url }}">
+    <div class="img-wrap"><img src="{{ leftImage.url }}"></div>
     <div class="txt">
           <h3>{{ contentBlock.leftTitle | md(inlineOnly = true) }}</h3>
     <p>{{ contentBlock.leftContent | md }}</p>
@@ -59,7 +59,7 @@
   </div>
   
   <div class="right">
-    <img src="{{ rightImage.url }}">
+    <div class="img-wrap"><img src="{{ rightImage.url }}"></div>
   </div>
   
   
@@ -79,12 +79,12 @@
     {% set rightImage2 = contentBlock.rightImage2.one() %}
 
   <div class="left">
-  <img src="{{ leftImage.url }}">
+    <div class="img-wrap"><img src="{{ leftImage.url }}"></div>
   </div>
   
   <div class="right">
-  <img src="{{ rightImage.url }}">
-    <img src="{{ rightImage2.url }}">
+    <div class="img-wrap"><img src="{{ rightImage.url }}"></div>
+    <div class="img-wrap"><img src="{{ rightImage2.url }}"></div>
   </div>
   
 </section>
